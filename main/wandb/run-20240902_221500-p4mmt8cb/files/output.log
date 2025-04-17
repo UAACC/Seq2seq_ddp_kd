@@ -1,0 +1,1927 @@
+09/02/2024 22:15:02 - INFO - __main__ - ***** Running training *****
+09/02/2024 22:15:02 - INFO - __main__ -   Num examples = 60005
+09/02/2024 22:15:02 - INFO - __main__ -   Num Epochs = 3
+09/02/2024 22:15:02 - INFO - __main__ -   Instantaneous batch size per device = 16
+09/02/2024 22:15:02 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 64
+09/02/2024 22:15:02 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/02/2024 22:15:02 - INFO - __main__ -   Total optimization steps = 2814.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 18%|███████████████████████▋                                                                                                             | 500/2814 [08:12<37:42,  1.02it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 33%|████████████████████████████████████████████▎                                                                                        | 938/2814 [19:19<54:10,  1.73s/it][INFO|configuration_utils.py:1045] 2024-09-02 22:34:23,271 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:24,174 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:26,609 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:27,546 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:28,578 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:29,546 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:30,642 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:31,702 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:32,606 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:33,525 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:34,593 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:35,631 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:36,519 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:38,459 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:39,363 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:40,299 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:41,470 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:42,407 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:43,446 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:45,464 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:46,923 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:47,877 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:49,322 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:50,347 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:51,204 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:52,260 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:53,257 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:54,263 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:55,346 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:56,377 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:57,618 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:58,632 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:34:59,589 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:00,718 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:02,584 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:03,740 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:04,834 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:05,839 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:07,353 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:08,323 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:09,368 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:10,345 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:11,248 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:12,154 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:13,170 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:14,117 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:15,117 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:16,299 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:17,182 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:18,178 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:19,141 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:20,137 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:21,223 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:22,266 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:23,358 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:24,369 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:25,365 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:26,457 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:27,393 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:28,504 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:29,466 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:30,450 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:31,379 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:32,351 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:33,836 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:34,897 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:35,956 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:36,966 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:38,009 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:38,975 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:39,928 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:41,003 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:42,115 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:43,040 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:44,055 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:45,162 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:46,144 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:47,191 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:48,023 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:49,044 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:50,503 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:51,477 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:52,608 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:54,565 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:55,616 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:56,825 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:57,785 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:58,783 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:35:59,729 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:00,579 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:01,564 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:02,672 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:03,827 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:04,856 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:05,886 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:06,873 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:07,836 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:09,043 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:10,176 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:11,186 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:12,225 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:13,406 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:14,309 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:15,306 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:16,304 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:17,343 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:18,373 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:19,408 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:20,444 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:21,437 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:22,435 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:23,556 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:24,624 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:26,018 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:27,014 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:28,475 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:29,372 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:30,970 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:32,030 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:33,074 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:34,220 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:35,221 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:36,206 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:37,306 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:38,317 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:39,480 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:40,444 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:41,416 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:42,307 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:43,329 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:44,758 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:45,784 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:46,888 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:48,345 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:49,383 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:50,889 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:51,926 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:53,366 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:54,527 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:55,548 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:56,641 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:57,489 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:58,628 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:36:59,579 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:00,601 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:02,067 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:03,051 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:04,053 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:05,142 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:06,139 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:07,614 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:08,570 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:09,615 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:10,627 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:11,630 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:12,629 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:13,584 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:14,646 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:15,585 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:17,541 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:18,630 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:19,766 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:20,805 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:21,793 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:22,747 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:23,846 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:24,757 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:25,854 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:26,894 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:28,035 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:28,978 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:29,994 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:30,999 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:31,986 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:33,150 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:34,989 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:35,978 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:36,985 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:37,960 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:39,028 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:39,977 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:41,019 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:42,104 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:43,144 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:44,154 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:45,351 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:46,261 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:47,357 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:48,369 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:49,434 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:50,569 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:51,729 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:52,659 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:53,593 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:55,169 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:56,151 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:57,244 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:58,221 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:37:59,247 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:00,328 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:01,317 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:02,269 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:03,528 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:04,492 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:05,511 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:06,576 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+[INFO|configuration_utils.py:1045] 2024-09-02 22:38:07,541 >> Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+09/02/2024 22:38:08 - INFO - __main__ - {'bleu2': 0.05187820521007417}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 36%|███████████████████████████████████████████████▏                                                                                     | 999/2814 [24:52<53:50,  1.78s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 53%|██████████████████████████████████████████████████████████████████████▎                                                             | 1499/2814 [33:50<21:39,  1.01it/s]
+
+ 53%|██████████████████████████████████████████████████████████████████████▎                                                             | 1500/2814 [33:51<21:36,  1.01it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 911, in <module>
+    main()
+  File "run_seq2seq.py", line 811, in main
+    accelerator.save_state(output_dir)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/accelerator.py", line 2989, in save_state
+    save_location = save_accelerator_state(

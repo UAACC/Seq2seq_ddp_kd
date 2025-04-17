@@ -1,0 +1,188 @@
+2024-09-01 15:48:58,948 INFO    StreamThr :1824605 [internal.py:wandb_internal():85] W&B internal server running at pid: 1824605, started at: 2024-09-01 15:48:58.947645
+2024-09-01 15:48:58,951 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: status
+2024-09-01 15:48:58,951 INFO    WriterThread:1824605 [datastore.py:open_for_write():87] open: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/run-gdp72yps.wandb
+2024-09-01 15:48:58,952 DEBUG   SenderThread:1824605 [sender.py:send():391] send: header
+2024-09-01 15:48:59,003 DEBUG   SenderThread:1824605 [sender.py:send():391] send: run
+2024-09-01 15:48:59,286 INFO    SenderThread:1824605 [dir_watcher.py:__init__():211] watching files in: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files
+2024-09-01 15:48:59,286 INFO    SenderThread:1824605 [sender.py:_start_run_threads():1200] run started: gdp72yps with start time 1725227338.947081
+2024-09-01 15:48:59,298 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: run_start
+2024-09-01 15:48:59,317 DEBUG   HandlerThread:1824605 [system_info.py:__init__():26] System info init
+2024-09-01 15:48:59,318 DEBUG   HandlerThread:1824605 [system_info.py:__init__():41] System info init done
+2024-09-01 15:48:59,318 INFO    HandlerThread:1824605 [system_monitor.py:start():194] Starting system monitor
+2024-09-01 15:48:59,318 INFO    SystemMonitor:1824605 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-01 15:48:59,318 INFO    SystemMonitor:1824605 [interfaces.py:start():188] Started cpu monitoring
+2024-09-01 15:48:59,319 INFO    HandlerThread:1824605 [system_monitor.py:probe():214] Collecting system info
+2024-09-01 15:48:59,320 INFO    SystemMonitor:1824605 [interfaces.py:start():188] Started disk monitoring
+2024-09-01 15:48:59,321 INFO    SystemMonitor:1824605 [interfaces.py:start():188] Started gpu monitoring
+2024-09-01 15:48:59,322 INFO    SystemMonitor:1824605 [interfaces.py:start():188] Started memory monitoring
+2024-09-01 15:48:59,322 INFO    SystemMonitor:1824605 [interfaces.py:start():188] Started network monitoring
+2024-09-01 15:48:59,374 DEBUG   HandlerThread:1824605 [system_info.py:probe():152] Probing system
+2024-09-01 15:48:59,380 DEBUG   HandlerThread:1824605 [system_info.py:_probe_git():137] Probing git
+2024-09-01 15:48:59,389 DEBUG   HandlerThread:1824605 [system_info.py:_probe_git():145] Probing git done
+2024-09-01 15:48:59,389 DEBUG   HandlerThread:1824605 [system_info.py:probe():200] Probing system done
+2024-09-01 15:48:59,389 DEBUG   HandlerThread:1824605 [system_monitor.py:probe():223] {'os': 'Linux-5.19.0-38-generic-x86_64-with-glibc2.10', 'python': '3.8.5', 'heartbeatAt': '2024-09-01T21:48:59.374140', 'startedAt': '2024-09-01T21:48:58.942517', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', '/home/dongheng/models/t5-base', '--dataset_name', 'xsum', '--max_seq_length', '500', '--max_answer_length', '100', '--doc_stride', '128', '--output_dir', 'save', '--source_prefix', 'summarize: ', '--learning_rate', '5e-5', '--do_train', '--do_eval', '--num_train_epochs', '1', '--overwrite_output_dir', '--report_to', 'wandb'), 'state': 'running', 'program': 'run_seq2seq.py', 'codePathLocal': 'run_seq2seq.py', 'codePath': 'accelerate/run_seq2seq.py', 'git': {'remote': 'https://github.com/UAACC/LLMR.git', 'commit': '605919dba25e61711f94c7d0afe176b313d73d54'}, 'email': None, 'root': '/home/dongheng/LLMR', 'host': 'manga-4', 'username': 'dongheng', 'executable': '/opt/anaconda3/envs/seq2seq_dongheng/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2625.911125, 'min': 1500.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3687.705, 'min': 1500.0, 'max': 3000.0}, {'current': 3672.203, 'min': 1500.0, 'max': 3000.0}, {'current': 2952.291, 'min': 1500.0, 'max': 3000.0}, {'current': 2949.127, 'min': 1500.0, 'max': 3000.0}, {'current': 3688.731, 'min': 1500.0, 'max': 3000.0}, {'current': 2951.133, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2953.994, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3025.97, 'min': 1500.0, 'max': 3000.0}, {'current': 2629.866, 'min': 1500.0, 'max': 3000.0}, {'current': 2618.738, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2200.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3688.196, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3708.099, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3708.141, 'min': 1500.0, 'max': 3000.0}, {'current': 3340.051, 'min': 1500.0, 'max': 3000.0}, {'current': 3256.027, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3708.136, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3707.383, 'min': 1500.0, 'max': 3000.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1729.4486045837402}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 7, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 48305799168}, {'name': 'NVIDIA RTX A6000', 'memory_total': 48305799168}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 251.75910568237305}}
+2024-09-01 15:48:59,389 INFO    HandlerThread:1824605 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-01 15:48:59,389 INFO    HandlerThread:1824605 [system_monitor.py:probe():227] Publishing system info
+2024-09-01 15:48:59,389 DEBUG   HandlerThread:1824605 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-01 15:49:00,288 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/conda-environment.yaml
+2024-09-01 15:49:00,908 DEBUG   HandlerThread:1824605 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-01 15:49:00,909 INFO    HandlerThread:1824605 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-01 15:49:00,912 DEBUG   SenderThread:1824605 [sender.py:send():391] send: files
+2024-09-01 15:49:00,912 INFO    SenderThread:1824605 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-01 15:49:00,973 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-01 15:49:00,973 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: python_packages
+2024-09-01 15:49:00,974 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-01 15:49:00,974 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: stop_status
+2024-09-01 15:49:00,977 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-01 15:49:01,287 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/conda-environment.yaml
+2024-09-01 15:49:01,287 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/requirements.txt
+2024-09-01 15:49:01,288 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/wandb-metadata.json
+2024-09-01 15:49:01,297 DEBUG   SenderThread:1824605 [sender.py:send():391] send: telemetry
+2024-09-01 15:49:01,297 DEBUG   SenderThread:1824605 [sender.py:send():391] send: config
+2024-09-01 15:49:01,298 INFO    wandb-upload_0:1824605 [upload_job.py:push():130] Uploaded file /tmp/tmpk7hvpbgmwandb/rcetvhfh-wandb-metadata.json
+2024-09-01 15:49:01,585 DEBUG   SenderThread:1824605 [sender.py:send():391] send: exit
+2024-09-01 15:49:01,586 INFO    SenderThread:1824605 [sender.py:send_exit():598] handling exit code: 1
+2024-09-01 15:49:01,586 INFO    SenderThread:1824605 [sender.py:send_exit():600] handling runtime: 2
+2024-09-01 15:49:01,587 INFO    SenderThread:1824605 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-01 15:49:01,587 INFO    SenderThread:1824605 [sender.py:send_exit():606] send defer
+2024-09-01 15:49:01,587 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:01,588 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-01 15:49:01,588 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:01,588 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-01 15:49:01,588 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 1
+2024-09-01 15:49:01,588 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:01,588 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-01 15:49:01,588 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:01,588 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-01 15:49:01,588 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 2
+2024-09-01 15:49:01,588 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:01,589 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-01 15:49:01,589 INFO    HandlerThread:1824605 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-01 15:49:01,589 DEBUG   SystemMonitor:1824605 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-01 15:49:01,589 DEBUG   SystemMonitor:1824605 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-01 15:49:01,589 DEBUG   SystemMonitor:1824605 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-01 15:49:01,589 INFO    HandlerThread:1824605 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-01 15:49:01,590 INFO    HandlerThread:1824605 [interfaces.py:finish():200] Joined disk monitor
+2024-09-01 15:49:02,224 INFO    HandlerThread:1824605 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-01 15:49:02,224 INFO    HandlerThread:1824605 [interfaces.py:finish():200] Joined memory monitor
+2024-09-01 15:49:02,225 INFO    HandlerThread:1824605 [interfaces.py:finish():200] Joined network monitor
+2024-09-01 15:49:02,225 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:02,225 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-01 15:49:02,225 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 3
+2024-09-01 15:49:02,225 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:02,225 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-01 15:49:02,226 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:02,226 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-01 15:49:02,226 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 4
+2024-09-01 15:49:02,226 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:02,226 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-01 15:49:02,226 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:02,226 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-01 15:49:02,226 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 5
+2024-09-01 15:49:02,226 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:02,227 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-01 15:49:02,227 DEBUG   SenderThread:1824605 [sender.py:send():391] send: summary
+2024-09-01 15:49:02,227 INFO    SenderThread:1824605 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-01 15:49:02,227 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:02,227 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-01 15:49:02,227 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 6
+2024-09-01 15:49:02,228 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:02,228 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-01 15:49:02,228 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:02,228 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-01 15:49:02,232 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: status_report
+2024-09-01 15:49:02,288 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/output.log
+2024-09-01 15:49:02,288 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/wandb-summary.json
+2024-09-01 15:49:02,328 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 7
+2024-09-01 15:49:02,329 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:02,329 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-01 15:49:02,329 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:02,329 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-01 15:49:02,584 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-01 15:49:03,289 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/config.yaml
+2024-09-01 15:49:04,289 INFO    Thread-12 :1824605 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/output.log
+2024-09-01 15:49:05,321 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 8
+2024-09-01 15:49:05,321 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: poll_exit
+2024-09-01 15:49:05,321 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:05,321 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-01 15:49:05,322 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:05,322 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-01 15:49:05,322 INFO    SenderThread:1824605 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-01 15:49:05,323 INFO    SenderThread:1824605 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-01 15:49:05,342 INFO    SenderThread:1824605 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-01 15:49:05,377 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 9
+2024-09-01 15:49:05,377 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:05,378 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-01 15:49:05,378 DEBUG   SenderThread:1824605 [sender.py:send():391] send: artifact
+2024-09-01 15:49:05,585 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-01 15:49:05,754 INFO    SenderThread:1824605 [sender.py:send_artifact():1549] sent artifact job-https___github.com_UAACC_LLMR.git_accelerate_run_seq2seq.py - {'id': 'QXJ0aWZhY3Q6MTE3NTY5MzE3Ng==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxOTI4MTI3OQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3NTY5MzE3Ng==', 'versionIndex': 2}}}
+2024-09-01 15:49:05,754 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:05,754 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-01 15:49:05,754 INFO    SenderThread:1824605 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-01 15:49:06,290 INFO    SenderThread:1824605 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/output.log
+2024-09-01 15:49:06,291 INFO    SenderThread:1824605 [dir_watcher.py:finish():388] scan: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files
+2024-09-01 15:49:06,291 INFO    SenderThread:1824605 [dir_watcher.py:finish():402] scan save: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/wandb-summary.json wandb-summary.json
+2024-09-01 15:49:06,291 INFO    SenderThread:1824605 [dir_watcher.py:finish():402] scan save: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/wandb-metadata.json wandb-metadata.json
+2024-09-01 15:49:06,291 INFO    SenderThread:1824605 [dir_watcher.py:finish():402] scan save: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/config.yaml config.yaml
+2024-09-01 15:49:06,291 INFO    SenderThread:1824605 [dir_watcher.py:finish():402] scan save: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/conda-environment.yaml conda-environment.yaml
+2024-09-01 15:49:06,292 INFO    SenderThread:1824605 [dir_watcher.py:finish():402] scan save: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/requirements.txt requirements.txt
+2024-09-01 15:49:06,294 INFO    SenderThread:1824605 [dir_watcher.py:finish():402] scan save: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/output.log output.log
+2024-09-01 15:49:06,295 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 10
+2024-09-01 15:49:06,295 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: poll_exit
+2024-09-01 15:49:06,295 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:06,296 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-01 15:49:06,298 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:06,299 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-01 15:49:06,299 INFO    SenderThread:1824605 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-01 15:49:06,535 INFO    wandb-upload_0:1824605 [upload_job.py:push():130] Uploaded file /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/wandb-summary.json
+2024-09-01 15:49:06,587 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-01 15:49:06,587 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: poll_exit
+2024-09-01 15:49:06,594 INFO    wandb-upload_1:1824605 [upload_job.py:push():130] Uploaded file /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/config.yaml
+2024-09-01 15:49:06,621 INFO    wandb-upload_3:1824605 [upload_job.py:push():130] Uploaded file /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/requirements.txt
+2024-09-01 15:49:06,639 INFO    wandb-upload_2:1824605 [upload_job.py:push():130] Uploaded file /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/conda-environment.yaml
+2024-09-01 15:49:06,659 INFO    wandb-upload_4:1824605 [upload_job.py:push():130] Uploaded file /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/files/output.log
+2024-09-01 15:49:06,860 INFO    Thread-11 :1824605 [sender.py:transition_state():626] send defer: 11
+2024-09-01 15:49:06,860 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:06,860 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-01 15:49:06,861 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:06,861 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-01 15:49:06,861 INFO    SenderThread:1824605 [file_pusher.py:join():175] waiting for file pusher
+2024-09-01 15:49:06,862 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 12
+2024-09-01 15:49:06,862 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:06,862 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-01 15:49:06,862 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:06,863 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-01 15:49:06,863 INFO    SenderThread:1824605 [file_stream.py:finish():601] file stream finish called
+2024-09-01 15:49:07,134 INFO    SenderThread:1824605 [file_stream.py:finish():605] file stream finish is done
+2024-09-01 15:49:07,134 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 13
+2024-09-01 15:49:07,135 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:07,135 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-01 15:49:07,135 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:07,135 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-01 15:49:07,136 INFO    SenderThread:1824605 [sender.py:transition_state():626] send defer: 14
+2024-09-01 15:49:07,136 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: defer
+2024-09-01 15:49:07,136 INFO    HandlerThread:1824605 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-01 15:49:07,137 DEBUG   SenderThread:1824605 [sender.py:send():391] send: final
+2024-09-01 15:49:07,137 DEBUG   SenderThread:1824605 [sender.py:send():391] send: footer
+2024-09-01 15:49:07,137 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: defer
+2024-09-01 15:49:07,137 INFO    SenderThread:1824605 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-01 15:49:07,138 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-01 15:49:07,139 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: server_info
+2024-09-01 15:49:07,139 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: poll_exit
+2024-09-01 15:49:07,140 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: server_info
+2024-09-01 15:49:07,144 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-01 15:49:07,145 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-01 15:49:07,146 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-01 15:49:07,146 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-01 15:49:07,217 DEBUG   SenderThread:1824605 [sender.py:send_request():418] send_request: poll_exit
+2024-09-01 15:49:07,217 INFO    MainThread:1824605 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-01 15:49:07,217 INFO    MainThread:1824605 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-01 15:49:07,218 INFO    MainThread:1824605 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-09-01 15:49:07,218 DEBUG   HandlerThread:1824605 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-01 15:49:07,218 INFO    HandlerThread:1824605 [handler.py:finish():884] shutting down handler
+2024-09-01 15:49:07,960 WARNING StreamThr :1824605 [internal.py:is_dead():413] Internal process exiting, parent pid 1824036 disappeared
+2024-09-01 15:49:07,960 ERROR   StreamThr :1824605 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-09-01 15:49:08,145 INFO    WriterThread:1824605 [datastore.py:close():296] close: /home/dongheng/LLMR/accelerate/wandb/run-20240901_154858-gdp72yps/run-gdp72yps.wandb
+2024-09-01 15:49:08,217 INFO    SenderThread:1824605 [sender.py:finish():1631] shutting down sender
+2024-09-01 15:49:08,217 INFO    SenderThread:1824605 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-01 15:49:08,217 INFO    SenderThread:1824605 [file_pusher.py:join():175] waiting for file pusher

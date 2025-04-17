@@ -1,0 +1,179 @@
+09/01/2024 16:13:37 - INFO - __main__ - ***** Running training *****
+09/01/2024 16:13:37 - INFO - __main__ -   Num examples = 204045
+09/01/2024 16:13:37 - INFO - __main__ -   Num Epochs = 1
+09/01/2024 16:13:37 - INFO - __main__ -   Instantaneous batch size per device = 4
+09/01/2024 16:13:37 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+09/01/2024 16:13:37 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/01/2024 16:13:37 - INFO - __main__ -   Total optimization steps = 12753.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|█▋                                                                                                                                | 169/12753 [02:25<3:01:00,  1.16it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 922, in <module>
+    main()
+  File "run_seq2seq.py", line 789, in main
+    outputs, loss = model(**batch)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 42, in forward
+    teacher_output = self.teacher(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1739, in forward
+    decoder_outputs = self.decoder(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+    layer_outputs = layer_module(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 716, in forward
+    cross_attention_outputs = self.layer[1](
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 626, in forward
+    normed_hidden_states = self.layer_norm(hidden_states)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 245, in forward
+    variance = hidden_states.to(torch.float32).pow(2).mean(-1, keepdim=True)
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "run_seq2seq.py", line 922, in <module>
+[rank0]:     main()
+[rank0]:   File "run_seq2seq.py", line 789, in main
+[rank0]:     outputs, loss = model(**batch)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 42, in forward
+[rank0]:     teacher_output = self.teacher(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1739, in forward
+[rank0]:     decoder_outputs = self.decoder(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+[rank0]:     layer_outputs = layer_module(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 716, in forward
+[rank0]:     cross_attention_outputs = self.layer[1](
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 626, in forward
+[rank0]:     normed_hidden_states = self.layer_norm(hidden_states)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 245, in forward
+[rank0]:     variance = hidden_states.to(torch.float32).pow(2).mean(-1, keepdim=True)
+[rank0]: KeyboardInterrupt

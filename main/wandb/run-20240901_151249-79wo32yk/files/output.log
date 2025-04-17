@@ -1,0 +1,66 @@
+  0%|                                                                                                                                              | 0/12753 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 920, in <module>
+    main()
+  File "run_seq2seq.py", line 787, in main
+    outputs, loss = model(**batch)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 43, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 56, in forward
+    print(f"Cross-Entropy Loss: {ce_loss.item()}")
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "run_seq2seq.py", line 920, in <module>
+[rank0]:     main()
+[rank0]:   File "run_seq2seq.py", line 787, in main
+[rank0]:     outputs, loss = model(**batch)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 819, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 807, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 43, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 56, in forward
+[rank0]:     print(f"Cross-Entropy Loss: {ce_loss.item()}")
+[rank0]: RuntimeError: CUDA error: device-side assert triggered
+[rank0]: CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+[rank0]: For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+[rank0]: Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+09/01/2024 15:12:51 - INFO - __main__ - ***** Running training *****
+09/01/2024 15:12:51 - INFO - __main__ -   Num examples = 204045
+09/01/2024 15:12:51 - INFO - __main__ -   Num Epochs = 1
+09/01/2024 15:12:51 - INFO - __main__ -   Instantaneous batch size per device = 4
+09/01/2024 15:12:51 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+09/01/2024 15:12:51 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/01/2024 15:12:51 - INFO - __main__ -   Total optimization steps = 12753.0
+LLM Loss: 3.6843008995056152

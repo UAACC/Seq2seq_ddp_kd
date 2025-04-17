@@ -1,0 +1,75 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 9799783,
+  "description": "",
+  "download_checksums": {
+    "/home/dongheng/LLMR/accelerate/single-turn/train.csv": {
+      "num_bytes": 7704081,
+      "checksum": null
+    },
+    "/home/dongheng/LLMR/accelerate/single-turn/valid.csv": {
+      "num_bytes": 870731,
+      "checksum": null
+    },
+    "/home/dongheng/LLMR/accelerate/single-turn/test.csv": {
+      "num_bytes": 897679,
+      "checksum": null
+    }
+  },
+  "download_size": 9472491,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 19272274,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 7970701,
+      "num_examples": 60005,
+      "dataset_name": "csv"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 900181,
+      "num_examples": 6594,
+      "dataset_name": "csv"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 928901,
+      "num_examples": 6955,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

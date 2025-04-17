@@ -1,0 +1,140 @@
+09/01/2024 14:50:38 - INFO - __main__ - ***** Running training *****
+09/01/2024 14:50:38 - INFO - __main__ -   Num examples = 204045
+09/01/2024 14:50:38 - INFO - __main__ -   Num Epochs = 1
+09/01/2024 14:50:38 - INFO - __main__ -   Instantaneous batch size per device = 4
+09/01/2024 14:50:38 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+09/01/2024 14:50:38 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/01/2024 14:50:38 - INFO - __main__ -   Total optimization steps = 12753.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▉                                                                                                                                  | 86/12753 [00:44<1:46:11,  1.99it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 918, in <module>
+    main()
+  File "run_seq2seq.py", line 787, in main
+    outputs, loss = model(**batch)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 43, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 40, in forward
+    teacher_output = self.teacher(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1702, in forward
+    encoder_outputs = self.encoder(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+    layer_outputs = layer_module(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 686, in forward
+    self_attention_outputs = self.layer[0](
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 593, in forward
+    attention_output = self.SelfAttention(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 564, in forward
+    attn_output = unshape(torch.matmul(attn_weights, value_states))  # (batch_size, seq_length, dim)
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "run_seq2seq.py", line 918, in <module>
+[rank0]:     main()
+[rank0]:   File "run_seq2seq.py", line 787, in main
+[rank0]:     outputs, loss = model(**batch)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 819, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 807, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 43, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 40, in forward
+[rank0]:     teacher_output = self.teacher(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1702, in forward
+[rank0]:     encoder_outputs = self.encoder(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+[rank0]:     layer_outputs = layer_module(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 686, in forward
+[rank0]:     self_attention_outputs = self.layer[0](
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 593, in forward
+[rank0]:     attention_output = self.SelfAttention(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 564, in forward
+[rank0]:     attn_output = unshape(torch.matmul(attn_weights, value_states))  # (batch_size, seq_length, dim)
+[rank0]: KeyboardInterrupt

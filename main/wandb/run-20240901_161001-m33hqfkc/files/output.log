@@ -1,0 +1,308 @@
+09/01/2024 16:10:03 - INFO - __main__ - ***** Running training *****
+09/01/2024 16:10:03 - INFO - __main__ -   Num examples = 204045
+09/01/2024 16:10:03 - INFO - __main__ -   Num Epochs = 1
+09/01/2024 16:10:03 - INFO - __main__ -   Instantaneous batch size per device = 4
+09/01/2024 16:10:03 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+09/01/2024 16:10:03 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/01/2024 16:10:03 - INFO - __main__ -   Total optimization steps = 12753.0
+labels are tensor([[    3, 18540,  2487,   969,    29,    65,  8151,     8,   166,  7155,
+             7, 31430,    13,   112, 16117,  2843,    38,  1401,    13,   112,
+          5220,     7, 12191,    12,  2902,   581,     8,   789,    31,     7,
+           126,  1456,  2219,     5,     1,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [   94,    19,     3,     9,  8899,  5016,    24,  3200,   544,  1163,
+            31,     7,  7353,  6123,  4889,    11,    80,    13,     8,   296,
+            31,     7,  1374, 11441,    21,     8,  1058,    13,  1580,  1124,
+             5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [   37,  2384,   636,    41, 13336,    61,   871,    33,   271, 16524,
+            15,    26,    21,  6585,  1041,    16,     3,     9,  7358,   147,
+           613,  8467,    11,     8, 12493,    13,  3518,  6036,     5,     1,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [   71,  1268, 12039,    49,    65,  1869,   160,   804,   239,    44,
+             8,  6885,   255,    65,  1279,    16,    21,     8,   336,  9455,
+           203,     5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100]],
+       device='cuda:0') size is torch.Size([4, 100])
+LLM Loss: 3.532593011856079
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[-2.2929e+01,  4.7603e-02, -4.0989e+00,  ..., -2.7157e+01,
+         -2.7750e+01, -2.5865e+01],
+        [-6.3789e+01, -1.2040e+01, -1.0952e+01,  ..., -6.6149e+01,
+         -7.2707e+01, -7.0956e+01],
+        [-1.2277e+02, -3.2858e+01, -3.5927e+01,  ..., -1.2583e+02,
+         -1.4082e+02, -1.3687e+02],
+        ...,
+        [-5.9584e+01, -1.0768e+01, -1.5097e+01,  ..., -6.3057e+01,
+         -6.9555e+01, -6.6819e+01],
+        [-5.0828e+01, -8.7129e+00, -1.4005e+01,  ..., -5.3955e+01,
+         -5.9184e+01, -5.7100e+01],
+        [-5.4257e+01, -8.3876e+00, -1.4835e+01,  ..., -5.7825e+01,
+         -6.3888e+01, -6.0705e+01]], device='cuda:0')
+Teacher Logits min: -140.81507873535156, max: 14.627083778381348
+KL Divergence Loss: 0.7329944372177124
+labels are tensor([[   71,   166,    18, 17114,  1486,    45,  5659,  1290, 23790,  3555,
+          4185, 10279,    12,  6224,    44, 20976,  1846,     6,   113,   130,
+             3, 17349,    44,   234,    21,     8,   166,    97,    48,   774,
+             5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [   37,   381,    13,  3513, 21314,    28,     3,     7,  3422,    17,
+             7,    16, 10256,    19,    44,    46,    66,    18,   715,   306,
+             6,  5638,    43,  2008,     5,     1,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [ 1945,  1384,  4298,    43,   787,  7641,    53,  4175,   227,   837,
+          4442,  4686,    30,  6704,     3,  3232,  1434, 17210,   581,  4623,
+             5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [    3,  4744,    15,   526, 18041,    29,  3047,    15,    26,  2789,
+            12,   430,  4441,  6224,   147,  1547,    12,   743,     3,     9,
+             3, 26814,   939,   872, 14710,     6,    38, 13547,    77,  4738,
+            26,    83,  4031,  4728,  4169,  3154,   710,    13,     3,     9,
+         15754,   910,   189,  1038,  2646,     5,     1,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100]],
+       device='cuda:0') size is torch.Size([4, 100])
+LLM Loss: 3.2562432289123535
+  0%|                                                                                                                                    | 2/12753 [00:01<3:15:50,  1.09it/s]
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[-29.1123,  -3.7536,  -6.5530,  ..., -32.9063, -35.3878, -32.9721],
+        [-56.4278, -10.3579, -12.2450,  ..., -60.2583, -65.7626, -63.0536],
+        [-72.3827, -14.6740, -14.3486,  ..., -76.5548, -83.5704, -80.8862],
+        ...,
+        [-53.4839, -10.3297, -13.3099,  ..., -56.6186, -62.2254, -59.9973],
+        [-53.8505,  -9.6046, -12.3764,  ..., -57.9729, -61.0201, -59.6817],
+        [-63.7067, -11.6060, -14.9311,  ..., -66.6546, -73.5985, -71.4326]],
+       device='cuda:0')
+Teacher Logits min: -136.7144775390625, max: 10.168302536010742
+KL Divergence Loss: 0.6840377449989319
+labels are tensor([[ 1698, 10837,    30,     3,     9,    96,  9423,   121, 16606,    52,
+         20395,   313,   583, 15375,     7,    72,   145, 11140,  2518,    16,
+         26994,     6,    34,    65, 13999,     5,     1,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [ 2051,  2012,     3,     9,  3452,  6224,    16,     8,  8486,  2300,
+            12, 14832,    35,  2789,    31,     7,   282,    88,     7,    18,
+          8163,  5216,     7,    44,    37,   411,  2165,     5,     1,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [ 2379,   349,  8927,    17,   449,    65,  1597,    46,  9952,  1464,
+            24,  3213,    12,    36,     3,   179,    12,  2862,     3,     7,
+          4667, 10057,  2622,  1694,   367,     5,     1,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [ 2789,  1553,    70,  1331,  4047,    31,     7, 24895,  4531,  2066,
+            28,     3,     9,     3,    60, 17481,    53, 12210,  4536,  6224,
+           147,  2051,    44,  9731,    23,    52,    76,     9,  1061,     6,
+           368,  5725,     5,     1,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100]],
+       device='cuda:0') size is torch.Size([4, 100])
+LLM Loss: 3.3371939659118652
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[-53.4242,  -7.1507, -11.8887,  ..., -57.3852, -62.4980, -60.2299],
+        [-54.3126, -10.8906, -12.0965,  ..., -57.8621, -63.8401, -61.5520],
+        [-31.3992,  -4.2387,  -7.9759,  ..., -35.2484, -38.8679, -36.7407],
+        ...,
+        [-48.5448,  -8.9204, -12.4205,  ..., -51.4438, -56.1913, -54.6875],
+        [-56.8176, -10.0827, -15.3717,  ..., -60.7121, -66.6462, -64.5226],
+        [-50.1918,  -7.5617, -11.9429,  ..., -54.4772, -57.4622, -55.8723]],
+       device='cuda:0')
+Teacher Logits min: -139.23544311523438, max: 11.808130264282227
+KL Divergence Loss: 0.6272255778312683
+labels are tensor([[ 4351,    31,     7,    73, 19234,  2550,   533,   807,   228, 17723,
+           139,     3,  8118,    23,     9,  3929,   982,   865,    16,   280,
+             3,  3227,    72,    19,   612,    16,  2061,     6,   497,   819,
+          3081,     5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [ 9145,   896,  2076,  1846,    49,   802, 18075,  9982, 10169,   152,
+           263,   112,  1205,    45,    46,  2641,    18,  7393,  2871,  8605,
+           383,  2818,    31,     7,     3, 18930,  2609,  9589,   550,    12,
+         21210,   106,     9,     5,     1,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [   71, 22982,  5220,   113,    47,     3,     9,  6323,   365,  9137,
+         25594,    11, 14626,  3899,    65, 10399,     8, 16117,   851,   346,
+          5457,     5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100],
+        [ 1013,  3850,  1661,  9846,  8083,     9,    65,     3, 16108,  4973,
+           277,  3874,    21,   112, 25372,    96,  3738,   343,     7,  1686,
+          2145,    79,  1213,  6670,   986,     7,    24,   130,    20,  3822,
+          6546,    81,  1001,   151,     5,     1,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100]],
+       device='cuda:0') size is torch.Size([4, 100])
+  0%|                                                                                                                                    | 3/12753 [00:02<3:07:43,  1.13it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 922, in <module>
+    main()
+  File "run_seq2seq.py", line 789, in main
+    outputs, loss = model(**batch)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 46, in forward
+    copy_stu_output = copy_student(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1702, in forward
+    encoder_outputs = self.encoder(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+    layer_outputs = layer_module(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 686, in forward
+    self_attention_outputs = self.layer[0](
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 592, in forward
+    normed_hidden_states = self.layer_norm(hidden_states)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1728, in __getattr__
+    return modules[name]
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "run_seq2seq.py", line 922, in <module>
+[rank0]:     main()
+[rank0]:   File "run_seq2seq.py", line 789, in main
+[rank0]:     outputs, loss = model(**batch)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 46, in forward
+[rank0]:     copy_stu_output = copy_student(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1702, in forward
+[rank0]:     encoder_outputs = self.encoder(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+[rank0]:     layer_outputs = layer_module(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 686, in forward
+[rank0]:     self_attention_outputs = self.layer[0](
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 592, in forward
+[rank0]:     normed_hidden_states = self.layer_norm(hidden_states)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1728, in __getattr__
+[rank0]:     return modules[name]
+[rank0]: KeyboardInterrupt

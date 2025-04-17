@@ -1,0 +1,127 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.5
+    cli_version: 0.17.8
+    framework: huggingface
+    huggingface_version: 4.45.0.dev0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1725228131
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      - 71
+      - 100
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      - 71
+      - 100
+      3:
+      - 23
+      - 61
+      4: 3.8.5
+      5: 0.17.8
+      6: 4.45.0.dev0
+      8:
+      - 5
+      13: linux-x86_64
+dataset_name:
+  desc: null
+  value: xsum
+dataset_config_name:
+  desc: null
+  value: null
+context_column:
+  desc: null
+  value: context
+question_column:
+  desc: null
+  value: null
+answer_column:
+  desc: null
+  value: null
+train_file:
+  desc: null
+  value: null
+validation_file:
+  desc: null
+  value: null
+test_file:
+  desc: null
+  value: null
+source_prefix:
+  desc: null
+  value: 'summarize: '
+overwrite_cache:
+  desc: null
+  value: false
+preprocessing_num_workers:
+  desc: null
+  value: null
+max_seq_length:
+  desc: null
+  value: 500
+max_answer_length:
+  desc: null
+  value: 100
+val_max_answer_length:
+  desc: null
+  value: 100
+pad_to_max_length:
+  desc: null
+  value: true
+max_train_samples:
+  desc: null
+  value: null
+max_eval_samples:
+  desc: null
+  value: null
+max_predict_samples:
+  desc: null
+  value: null
+version_2_with_negative:
+  desc: null
+  value: false
+null_score_diff_threshold:
+  desc: null
+  value: 0.0
+doc_stride:
+  desc: null
+  value: 128
+n_best_size:
+  desc: null
+  value: 20
+num_beams:
+  desc: null
+  value: 1
+ignore_pad_token_for_loss:
+  desc: null
+  value: true
+with_tracking:
+  desc: null
+  value: true
+max_train_steps:
+  desc: null
+  value: 12753.0
+num_warmup_steps:
+  desc: null
+  value: 0
+checkpointing_steps:
+  desc: null
+  value: null
+lr_scheduler_type:
+  desc: null
+  value: LINEAR

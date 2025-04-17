@@ -1,0 +1,189 @@
+09/01/2024 16:02:14 - INFO - __main__ - ***** Running training *****
+09/01/2024 16:02:14 - INFO - __main__ -   Num examples = 204045
+09/01/2024 16:02:14 - INFO - __main__ -   Num Epochs = 1
+09/01/2024 16:02:14 - INFO - __main__ -   Instantaneous batch size per device = 4
+09/01/2024 16:02:14 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+09/01/2024 16:02:14 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/01/2024 16:02:14 - INFO - __main__ -   Total optimization steps = 12753.0
+LLM Loss: 3.532593011856079
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[-2.2929e+01,  4.7603e-02, -4.0989e+00,  ..., -2.7157e+01,
+         -2.7750e+01, -2.5865e+01],
+        [-6.3789e+01, -1.2040e+01, -1.0952e+01,  ..., -6.6149e+01,
+         -7.2707e+01, -7.0956e+01],
+        [-1.2277e+02, -3.2858e+01, -3.5927e+01,  ..., -1.2583e+02,
+         -1.4082e+02, -1.3687e+02],
+        ...,
+        [-5.9584e+01, -1.0768e+01, -1.5097e+01,  ..., -6.3057e+01,
+         -6.9555e+01, -6.6819e+01],
+        [-5.0828e+01, -8.7129e+00, -1.4005e+01,  ..., -5.3955e+01,
+         -5.9184e+01, -5.7100e+01],
+        [-5.4257e+01, -8.3876e+00, -1.4835e+01,  ..., -5.7825e+01,
+         -6.3888e+01, -6.0705e+01]], device='cuda:0')
+Teacher Logits min: -140.81507873535156, max: 14.627083778381348
+KL Divergence Loss: 0.7329944372177124
+LLM Loss: 3.2562432289123535
+  0%|                                                                                                                                    | 1/12753 [00:01<3:53:52,  1.10s/it]
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[-29.1123,  -3.7536,  -6.5530,  ..., -32.9063, -35.3878, -32.9721],
+        [-56.4278, -10.3579, -12.2450,  ..., -60.2583, -65.7626, -63.0536],
+        [-72.3827, -14.6740, -14.3486,  ..., -76.5548, -83.5704, -80.8862],
+        ...,
+        [-53.4839, -10.3297, -13.3099,  ..., -56.6186, -62.2254, -59.9973],
+        [-53.8505,  -9.6046, -12.3764,  ..., -57.9729, -61.0201, -59.6817],
+        [-63.7067, -11.6060, -14.9311,  ..., -66.6546, -73.5985, -71.4326]],
+       device='cuda:0')
+Teacher Logits min: -136.7144775390625, max: 10.168302536010742
+KL Divergence Loss: 0.6840377449989319
+LLM Loss: 3.3371939659118652
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[-53.4242,  -7.1507, -11.8887,  ..., -57.3852, -62.4980, -60.2299],
+        [-54.3126, -10.8906, -12.0965,  ..., -57.8621, -63.8401, -61.5520],
+        [-31.3992,  -4.2387,  -7.9759,  ..., -35.2484, -38.8679, -36.7407],
+        ...,
+        [-48.5448,  -8.9204, -12.4205,  ..., -51.4438, -56.1913, -54.6875],
+        [-56.8176, -10.0827, -15.3717,  ..., -60.7121, -66.6462, -64.5226],
+        [-50.1918,  -7.5617, -11.9429,  ..., -54.4772, -57.4622, -55.8723]],
+       device='cuda:0')
+Teacher Logits min: -139.23544311523438, max: 11.808130264282227
+KL Divergence Loss: 0.6272255778312683
+LLM Loss: 3.1794798374176025
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[ -54.0878,   -8.7863,  -13.2007,  ...,  -57.0922,  -63.2458,
+          -60.9516],
+        [ -60.1933,  -12.4264,  -11.8251,  ...,  -62.6307,  -69.7780,
+          -68.0307],
+        [-100.4360,  -30.8935,  -30.8286,  ..., -105.9465, -113.9088,
+         -111.1350],
+        ...,
+        [ -42.6286,   -4.9079,  -10.7860,  ...,  -44.0328,  -48.6022,
+          -47.3077],
+        [ -55.3306,  -10.1663,  -15.7285,  ...,  -58.5706,  -63.8084,
+          -61.4827],
+        [ -64.9197,  -12.4201,  -17.5657,  ...,  -68.0791,  -75.5009,
+          -73.4393]], device='cuda:0')
+Teacher Logits min: -139.07957458496094, max: 14.185606002807617
+
+  0%|                                                                                                                                    | 5/12753 [00:04<3:16:00,  1.08it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 922, in <module>
+    main()
+  File "run_seq2seq.py", line 789, in main
+    outputs, loss = model(**batch)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 42, in forward
+    teacher_output = self.teacher(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1739, in forward
+    decoder_outputs = self.decoder(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+    layer_outputs = layer_module(
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 716, in forward
+    cross_attention_outputs = self.layer[1](
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 626, in forward
+    normed_hidden_states = self.layer_norm(hidden_states)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 245, in forward
+    variance = hidden_states.to(torch.float32).pow(2).mean(-1, keepdim=True)
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "run_seq2seq.py", line 922, in <module>
+[rank0]:     main()
+[rank0]:   File "run_seq2seq.py", line 789, in main
+[rank0]:     outputs, loss = model(**batch)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 42, in forward
+[rank0]:     teacher_output = self.teacher(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1739, in forward
+[rank0]:     decoder_outputs = self.decoder(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 1106, in forward
+[rank0]:     layer_outputs = layer_module(
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 716, in forward
+[rank0]:     cross_attention_outputs = self.layer[1](
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 626, in forward
+[rank0]:     normed_hidden_states = self.layer_norm(hidden_states)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/transformers/src/transformers/models/t5/modeling_t5.py", line 245, in forward
+[rank0]:     variance = hidden_states.to(torch.float32).pow(2).mean(-1, keepdim=True)
+[rank0]: KeyboardInterrupt
+LLM Loss: 2.638063430786133
+teacher logits size torch.Size([4, 100, 32128])
+teacher logits size torch.Size([400, 32128])
+Teacher Logits: tensor([[ -35.4692,   -5.0814,   -8.5673,  ...,  -38.8213,  -42.0646,
+          -40.0648],
+        [-115.4022,  -33.7207,  -29.4967,  ..., -120.2527, -132.1039,
+         -129.5173],
+        [ -65.7085,  -13.6760,  -14.4308,  ...,  -67.8807,  -76.1656,
+          -73.9515],
+        ...,
+        [ -58.6695,   -7.7823,  -14.9245,  ...,  -61.5652,  -66.6413,
+          -64.7730],
+        [ -69.4733,  -12.3636,  -17.7166,  ...,  -71.4794,  -80.4827,
+          -78.0233],
+        [ -42.9192,   -4.7322,  -10.9862,  ...,  -47.2546,  -51.5138,
+          -48.8270]], device='cuda:0')
+Teacher Logits min: -178.99850463867188, max: 14.896159172058105
+KL Divergence Loss: 0.5040233731269836
+LLM Loss: 2.605804681777954

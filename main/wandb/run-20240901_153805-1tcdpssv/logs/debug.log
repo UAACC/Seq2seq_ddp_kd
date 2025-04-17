@@ -1,0 +1,27 @@
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Current SDK version is 0.17.8
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Configure stats pid to 1814641
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Loading settings from /home/dongheng/.config/wandb/settings
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Loading settings from /home/dongheng/LLMR/accelerate/wandb/settings
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Applying setup settings: {'_disable_service': False}
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': 'accelerate/run_seq2seq.py', 'program_abspath': '/home/dongheng/LLMR/accelerate/run_seq2seq.py', 'program': 'run_seq2seq.py'}
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_init.py:_log_setup():524] Logging user logs to /home/dongheng/LLMR/accelerate/wandb/run-20240901_153805-1tcdpssv/logs/debug.log
+2024-09-01 15:38:05,547 INFO    MainThread:1814641 [wandb_init.py:_log_setup():525] Logging internal logs to /home/dongheng/LLMR/accelerate/wandb/run-20240901_153805-1tcdpssv/logs/debug-internal.log
+2024-09-01 15:38:05,548 INFO    MainThread:1814641 [wandb_init.py:init():607] calling init triggers
+2024-09-01 15:38:05,548 INFO    MainThread:1814641 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {}
+2024-09-01 15:38:05,548 INFO    MainThread:1814641 [wandb_init.py:init():657] starting backend
+2024-09-01 15:38:05,548 INFO    MainThread:1814641 [wandb_init.py:init():661] setting up manager
+2024-09-01 15:38:05,550 INFO    MainThread:1814641 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-09-01 15:38:05,551 INFO    MainThread:1814641 [wandb_init.py:init():669] backend started and connected
+2024-09-01 15:38:05,557 INFO    MainThread:1814641 [wandb_init.py:init():767] updated telemetry
+2024-09-01 15:38:05,619 INFO    MainThread:1814641 [wandb_init.py:init():800] communicating run to backend with 90.0 second timeout
+2024-09-01 15:38:05,910 INFO    MainThread:1814641 [wandb_init.py:init():851] starting run threads in backend
+2024-09-01 15:38:07,609 INFO    MainThread:1814641 [wandb_run.py:_console_start():2463] atexit reg
+2024-09-01 15:38:07,609 INFO    MainThread:1814641 [wandb_run.py:_redirect():2309] redirect: wrap_raw
+2024-09-01 15:38:07,609 INFO    MainThread:1814641 [wandb_run.py:_redirect():2374] Wrapping output streams.
+2024-09-01 15:38:07,609 INFO    MainThread:1814641 [wandb_run.py:_redirect():2399] Redirects installed.
+2024-09-01 15:38:07,611 INFO    MainThread:1814641 [wandb_init.py:init():894] run started, returning control to user process
+2024-09-01 15:38:07,612 INFO    MainThread:1814641 [wandb_run.py:_config_callback():1392] config_cb None None {'dataset_name': 'xsum', 'dataset_config_name': None, 'context_column': 'context', 'question_column': None, 'answer_column': None, 'train_file': None, 'validation_file': None, 'test_file': None, 'source_prefix': 'summarize: ', 'overwrite_cache': False, 'preprocessing_num_workers': None, 'max_seq_length': 500, 'max_answer_length': 100, 'val_max_answer_length': 100, 'pad_to_max_length': True, 'max_train_samples': None, 'max_eval_samples': None, 'max_predict_samples': None, 'version_2_with_negative': False, 'null_score_diff_threshold': 0.0, 'doc_stride': 128, 'n_best_size': 20, 'num_beams': 1, 'ignore_pad_token_for_loss': True, 'with_tracking': True, 'max_train_steps': 12753.0, 'num_warmup_steps': 0, 'checkpointing_steps': None, 'lr_scheduler_type': 'LINEAR'}
+2024-09-01 15:38:14,635 WARNING MsgRouterThr:1814641 [router.py:message_loop():77] message_loop has been closed

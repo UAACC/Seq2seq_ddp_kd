@@ -1,0 +1,193 @@
+  0%|                                                                                                                                              | 0/12753 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "run_seq2seq.py", line 922, in <module>
+    main()
+  File "run_seq2seq.py", line 789, in main
+    outputs, loss = model(**batch)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 43, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 67, in forward
+    assert not torch.isnan(teacher_logits).any(), "Found nan in teacher_logits"
+AssertionError: Found nan in teacher_logits
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "run_seq2seq.py", line 922, in <module>
+[rank0]:     main()
+[rank0]:   File "run_seq2seq.py", line 789, in main
+[rank0]:     outputs, loss = model(**batch)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 819, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/accelerate/utils/operations.py", line 807, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:   File "/opt/anaconda3/envs/seq2seq_dongheng/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 43, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/dongheng/LLMR/accelerate/Mymodel.py", line 67, in forward
+[rank0]:     assert not torch.isnan(teacher_logits).any(), "Found nan in teacher_logits"
+[rank0]: AssertionError: Found nan in teacher_logits
+09/01/2024 15:54:01 - INFO - __main__ - ***** Running training *****
+09/01/2024 15:54:01 - INFO - __main__ -   Num examples = 204045
+09/01/2024 15:54:01 - INFO - __main__ -   Num Epochs = 1
+09/01/2024 15:54:01 - INFO - __main__ -   Instantaneous batch size per device = 4
+09/01/2024 15:54:01 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 16
+09/01/2024 15:54:01 - INFO - __main__ -   Gradient Accumulation steps = 1
+09/01/2024 15:54:01 - INFO - __main__ -   Total optimization steps = 12753.0
+batch contains {'input_ids': tensor([[21603,    10,    37,  ...,     0,     0,     0],
+        [21603,    10,   299,  ...,     0,     0,     0],
+        [21603,    10,    37,  ...,     0,     0,     0],
+        [21603,    10, 29784,  ...,     0,     0,     0]], device='cuda:0'), 'attention_mask': tensor([[1, 1, 1,  ..., 0, 0, 0],
+        [1, 1, 1,  ..., 0, 0, 0],
+        [1, 1, 1,  ..., 0, 0, 0],
+        [1, 1, 1,  ..., 0, 0, 0]], device='cuda:0'), 'labels': tensor([[    3, 18540,  2487,   969,    29,    65,  8151,     8,   166,  7155,
+             7, 31430,    13,   112, 16117,  2843,    38,  1401,    13,   112,
+          5220,     7, 12191,    12,  2902,   581,     8,   789,    31,     7,
+           126,  1456,  2219,     5,     1,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100],
+        [   94,    19,     3,     9,  8899,  5016,    24,  3200,   544,  1163,
+            31,     7,  7353,  6123,  4889,    11,    80,    13,     8,   296,
+            31,     7,  1374, 11441,    21,     8,  1058,    13,  1580,  1124,
+             5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100],
+        [   37,  2384,   636,    41, 13336,    61,   871,    33,   271, 16524,
+            15,    26,    21,  6585,  1041,    16,     3,     9,  7358,   147,
+           613,  8467,    11,     8, 12493,    13,  3518,  6036,     5,     1,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100],
+        [   71,  1268, 12039,    49,    65,  1869,   160,   804,   239,    44,
+             8,  6885,   255,    65,  1279,    16,    21,     8,   336,  9455,
+           203,     5,     1,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+          -100,  -100,  -100,  -100]], device='cuda:0')}
+LLM Loss: 3.6843008995056152
+copy_stu_logits is tensor([[[-17.0156,  -8.9688, -14.2500,  ..., -42.4062, -42.5312, -42.3750],
+         [-32.1875, -15.0234,  -7.0898,  ..., -43.0312, -43.1562, -43.1875],
+         [-43.8438, -19.8125, -19.2969,  ..., -55.1875, -55.5000, -55.3438],
+         ...,
+         [-14.1953,  -6.6406, -11.7422,  ..., -35.1875, -35.2500, -34.9688],
+         [-23.1875, -11.2656, -17.6719,  ..., -46.6250, -46.6250, -46.3438],
+         [-11.3359,  -9.2266, -14.3672,  ..., -41.3438, -41.4688, -41.2812]],
+        [[-21.9844, -10.8047, -17.8281,  ..., -41.8750, -41.9375, -41.9062],
+         [-31.1094, -16.7344, -13.5000,  ..., -48.5625, -48.7812, -48.9062],
+         [-16.7188, -10.3047, -11.4844,  ..., -40.5938, -40.5938, -40.6875],
+         ...,
+         [-21.8438, -10.2266, -15.8359,  ..., -41.5625, -41.5625, -41.5625],
+         [-23.5781, -10.7109, -15.4062,  ..., -43.9688, -44.0625, -44.0000],
+         [-22.5312, -11.7734, -15.5703,  ..., -43.6875, -43.7812, -43.7812]],
+        [[-11.3281, -13.2734, -15.5312,  ..., -46.9688, -47.0000, -46.9375],
+         [-20.2344, -16.2031, -15.0859,  ..., -49.4688, -49.3750, -49.4688],
+         [-29.1406, -18.3594, -15.7734,  ..., -53.4062, -53.1250, -53.4062],
+         ...,
+         [-16.9375, -10.7422, -14.4453,  ..., -44.8125, -44.9062, -44.8125],
+         [ -8.3594,  -8.6562, -14.6641,  ..., -43.8750, -43.9062, -43.8438],
+         [-15.3438, -12.9766, -15.9766,  ..., -46.8750, -46.8438, -46.7188]],
+        [[-20.7344, -12.6328, -17.2969,  ..., -40.1875, -40.1250, -40.0625],
+         [-16.3281, -13.8750, -10.7734,  ..., -41.9062, -42.0938, -42.0625],
+         [-28.2656, -17.8594, -13.9453,  ..., -43.5625, -43.4375, -43.5312],
+         ...,
+         [-16.7344, -10.0234, -12.6953,  ..., -35.5312, -35.3750, -35.3750],
+         [-16.3750, -10.4297, -17.4688,  ..., -41.4375, -41.3125, -41.2812],
+         [-20.4062, -12.8281, -19.3906,  ..., -43.8750, -43.7500, -43.6562]]],
+       device='cuda:0', dtype=torch.float16)
+Labels: tensor([    3, 18540,  2487,   969,    29,    65,  8151,     8,   166,  7155,
+            7, 31430,    13,   112, 16117,  2843,    38,  1401,    13,   112,
+         5220,     7, 12191,    12,  2902,   581,     8,   789,    31,     7,
+          126,  1456,  2219,     5,     1,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,    94,    19,     3,     9,  8899,  5016,
+           24,  3200,   544,  1163,    31,     7,  7353,  6123,  4889,    11,
+           80,    13,     8,   296,    31,     7,  1374, 11441,    21,     8,
+         1058,    13,  1580,  1124,     5,     1,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,    37,  2384,
+          636,    41, 13336,    61,   871,    33,   271, 16524,    15,    26,
+           21,  6585,  1041,    16,     3,     9,  7358,   147,   613,  8467,
+           11,     8, 12493,    13,  3518,  6036,     5,     1,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,    71,  1268, 12039,    49,    65,  1869,   160,   804,
+          239,    44,     8,  6885,   255,    65,  1279,    16,    21,     8,
+          336,  9455,   203,     5,     1,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,  -100,
+         -100,  -100,  -100,  -100,  -100,  -100], device='cuda:0')
+Cross-Entropy Loss: 3.6843008995056152
+teacher logits size torch.Size([4, 104, 32128])
+teacher logits size torch.Size([416, 32128])
+Teacher Logits: tensor([[nan, nan, nan,  ..., nan, nan, nan],
+        [nan, nan, nan,  ..., nan, nan, nan],
+        [nan, nan, nan,  ..., nan, nan, nan],
+        ...,
+        [nan, nan, nan,  ..., nan, nan, nan],
+        [nan, nan, nan,  ..., nan, nan, nan],
+        [nan, nan, nan,  ..., nan, nan, nan]], device='cuda:0',
+       dtype=torch.float16)
+Teacher Logits min: nan, max: nan

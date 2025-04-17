@@ -1,0 +1,254 @@
+{
+    "os": "Linux-5.19.0-38-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2024-09-02T23:05:24.748122",
+    "startedAt": "2024-09-02T23:05:24.260598",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name_or_path",
+        "t5-base",
+        "--train_file",
+        "single-turn/train.csv",
+        "--validation_file",
+        "single-turn/valid.csv",
+        "--test_file",
+        "single-turn/test.csv",
+        "--max_seq_length",
+        "100",
+        "--doc_stride",
+        "128",
+        "--output_dir",
+        "debug_dailyDialog",
+        "--do_train",
+        "--do_eval",
+        "--question_column",
+        "question",
+        "--answer_column",
+        "answer",
+        "--overwrite_output_dir"
+    ],
+    "state": "running",
+    "program": "run_seq2seq.py",
+    "codePathLocal": "run_seq2seq.py",
+    "codePath": "accelerate/run_seq2seq.py",
+    "git": {
+        "remote": "https://github.com/UAACC/LLMR.git",
+        "commit": "605919dba25e61711f94c7d0afe176b313d73d54"
+    },
+    "email": null,
+    "root": "/home/dongheng/LLMR",
+    "host": "manga-4",
+    "username": "dongheng",
+    "executable": "/opt/anaconda3/envs/seq2seq_dongheng/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2400.97475,
+        "min": 1500.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2243.179,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1918.977,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2561.39,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1781.89,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2381.255,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1635.367,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2388.646,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2400.985,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2405.996,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2645.714,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2700.396,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3579.988,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3715.637,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2975.428,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2968.66,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3715.657,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2978.932,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3715.619,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3715.66,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1832.2072448730469,
+            "used": 1705.1522064208984
+        }
+    },
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 7,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 48305799168
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 48305799168
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        }
+    ],
+    "memory": {
+        "total": 251.75910568237305
+    }
+}
